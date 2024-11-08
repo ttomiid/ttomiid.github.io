@@ -134,7 +134,7 @@ h1 {
 
 .divider {
   height: 4px;
-  width: 60px;
+  width: 200px;
   background-color: aqua;
   margin-top: 5px;
   margin-bottom: 2em;
@@ -269,12 +269,12 @@ h1 {
 
 .footer {
   display: flex;
-  flex-direction: column;
+  /*flex-direction: column;*/
   justify-content: center;
   align-items: center;
   width: 100vw;
   height: 200px;
-  padding: 2em;
+  padding: 8em;
   background-color: aqua;
 }
 
@@ -290,12 +290,17 @@ h1 {
 .sotial-networks {
   display: flex;
   justify-content: space-evenly;
-  width: 300px;
+  width: 650px;
   margin-top: 1em;
+  padding: 0em 0em 0em 25em;
 }
 
 .sotial-networks i {
-  font-size: 1.5em;
+  font-size: 2.0em;
+}
+
+.sotial-networks i:hover{
+  color: #ffffff;
 }
 
 .portfolio,
@@ -310,7 +315,7 @@ h1 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 5em;
+  padding: 4em;
 }
 
 
@@ -419,7 +424,7 @@ h1 {
   background-color: aqua;
 }
 
-
+/*
 .footer {
   display: flex;
   flex-direction: column;
@@ -427,7 +432,7 @@ h1 {
   align-items: center;
   width: 100vw;
   height: 200px;
-  padding: 2em;
+  padding: 0em;
   background-color: aqua;
 }
 
@@ -438,15 +443,39 @@ h1 {
 .footer-content h5 {
   font-size: 1.5em;
   text-align: center;
-}
+}*/
 
-.sotial-networks {
+.sotial-networks-contact {
   display: flex;
   justify-content: space-evenly;
-  width: 300px;
+  width: 550px;
   margin-top: 1em;
 }
 
-.sotial-networks i {
-  font-size: 1.5em;
+.sotial-networks-contact i {
+  font-size: 5em;
+  text-decoration: none;
+}
+
+.sotial-networks-contact:visited{
+  color: inherit;
+  text-decoration: none;
+}
+
+.download-cv2 {
+  padding: 10px 20px;
+  background-color:#191c32;
+  border: none;
+  border-radius: 20px;
+  margin-top: 10px;
+  cursor: pointer;
+  -webkit-box-shadow: 1px 3px 11px -5px rgba(102,231,200,0.69);
+  -moz-box-shadow: 1px 3px 11px -5px rgba(102,231,200,0.69);
+  box-shadow: 1px 3px 11px -5px rgba(102,231,200,0.69);
+  color: #ffffff;
+}
+
+.download-cv2:hover {
+  background-color:rgb(0, 0, 0);
+  box-shadow: none;
 }
