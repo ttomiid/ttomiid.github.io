@@ -10,6 +10,14 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
+.TD:visited{
+  color: inherit;
+}
+
+.TD{
+  text-decoration: none;
+}
+
 .wrapper {
   width: 100vw;
   height: 100vh;
@@ -29,7 +37,7 @@ body {
 }
 .menu {
   display: flex;
-  width: 50%;
+  width: 30%;
   justify-content: space-around;
 }
 .menu  li {
@@ -37,14 +45,15 @@ body {
 
 }
 .menu a {
-  color: #fff;
+  color: #ffffff;
   text-decoration: none;
   padding: 10px 20px; 
 }
 
 .menu li:hover a{
   background-color: aqua;
-  color: #191c32;
+  color: #000000;
+  border-radius: 20px;
 }
 
 .menu .active {
