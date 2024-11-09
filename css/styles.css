@@ -8,6 +8,7 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
+
 }
 
 .TD:visited{
@@ -19,10 +20,11 @@ body {
 }
 
 .wrapper {
-  width: 100vw;
+  width: 99vw;
   height: 100vh;
   background-color: #191c32;
   color: #fff;
+  min-height: 100vh;
 }
 .navbar {
   display: flex;
@@ -104,7 +106,7 @@ h1 {
 
 .main img {
   border:  7px solid aqua;
-  width: 350px;
+  width: 370px;
   height: 520px;
   z-index: 1;
 }
@@ -112,13 +114,13 @@ h1 {
 .about {
   display: grid;
   grid-template-columns: repeat(10, 1fr);
-  width: 100vw;
+  width: 99vw;
   align-items: center;
   background-color: #000000;
 }
 
 .about img {
-  width: 100%;
+  width: 99%;
   grid-column: 1/5;
 }
 
@@ -147,13 +149,13 @@ h1 {
 
 .portfolio,
 .contact-section {
-  width: 100vw;
+  width: 99vw;
   background-color: #191c32;
   color: #fff;
 }
 
 .portfolio-heading {
-  width: 100vw;
+  width: 99vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -183,7 +185,7 @@ h1 {
 }
 
 .card__img {
-  width: 100%;
+  width: 99%;
   height: 150px;
   background-image: url(https://res.cloudinary.com/freelancer2222222222222222/image/upload/v1650543491/samples/2-original_agisst.png);
   background-size: cover;
@@ -218,21 +220,6 @@ h1 {
 }
 
 
-.contact-section {
-  padding: 3em;
-}
-
-.container-contact {
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-}
-
-.contact-section img {
-  width: 750px;
-  height: 700px;
-  bottom: 0px;
-}
 
 .form-group {
   display: flex;
@@ -272,7 +259,7 @@ h1 {
   /*flex-direction: column;*/
   justify-content: center;
   align-items: center;
-  width: 100vw;
+  width: 99vw;
   height: 200px;
   padding: 8em;
   background-color: aqua;
@@ -305,13 +292,13 @@ h1 {
 
 .portfolio,
 .contact-section {
-  width: 100vw;
+  width: 99vw;
   background-color: #191c32;
   color: #fff;
 }
 
 .portfolio-heading {
-  width: 100vw;
+  width: 99vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -341,7 +328,7 @@ h1 {
 }
 
 .card__img {
-  width: 100%;
+  width: 99%;
   height: 150px;
   background-image: url(../img/2-original.png);
   background-size: cover;
