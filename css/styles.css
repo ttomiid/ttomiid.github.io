@@ -501,7 +501,7 @@ h1 {
   }
 
  .portfolio .container {
-    width: 80vw;
+    width: 800vw;
     height: 190vh;
     margin: 0 auto;
     display: inline;
@@ -532,6 +532,12 @@ h1 {
   .wrapper{
     width: 56.2vh;
   }
+
+  .portfolio{
+    width: 56.2vh;
+    
+  }
+
 
   
 }
