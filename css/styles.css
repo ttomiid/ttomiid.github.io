@@ -89,7 +89,7 @@ h1 {
 }
 
 .download-cv {
-  padding: 10px 20px;
+  padding: 15px 20px;
   background-color: aqua;
   border: none;
   border-radius: 20px;
@@ -477,12 +477,20 @@ h1 {
   }
   .about-info {
     padding: 5em 0em 5em 0em;
+    width: 51vh;
   }
+
+  .about{
+    width: 56.2vh;
+  }
+
   .menu {
-    display: flex;
     width: 85%;
-    justify-content: space-around;
-    padding: 0px 0px 0px 10px;
+    margin-bottom: 20px;
+  }
+
+  .menu a{
+    padding: 2px;
   }
 
   .card {
@@ -520,6 +528,11 @@ h1 {
     color: inherit;
     text-decoration: none;
   }
+
+  .wrapper{
+    width: 56.2vh;
+  }
+
   
 }
 
