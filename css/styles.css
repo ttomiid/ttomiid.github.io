@@ -490,6 +490,9 @@ h1 {
 }
 
 @media(max-width: 767px){
+  .container_typing{
+    font-size: 3ch;
+  }
   .img_main{
     display: none;
   }
@@ -497,7 +500,7 @@ h1 {
     display: none;
   }
   .about-info {
-    padding: 5em 0em 5em 0em;
+    padding: 5em 10em 5em 0em;
     width: 51vh;
   }
 
