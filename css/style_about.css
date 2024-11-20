@@ -24,7 +24,7 @@ body {
   height: 100vh;
   background-color: #191c32;
   color: #fff;
-  min-height: 1000vh;
+  min-height: 420vh;
 }
 .navbar {
     display: flex;
@@ -489,7 +489,7 @@ body {
     }
   
     .menu a{
-      padding: 2px;
+      padding: 20px;
     }
   
     .card {
@@ -529,10 +529,23 @@ body {
     }
   
     .wrapper{
-      width: 56.2vh;
+      width: 70vh;
+      min-height: 700vh;
+      padding-right: 480px;
+    }
+
+    .info-content{
+      width: 290px;
     }
   
-    
+    .main {
+      width: 2vw;
+      height: 80vh;
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      align-items: center;
+      gap: 8em;
+    }
   }
   
   @media(min-width: 768px) and (max-width: 990px){
