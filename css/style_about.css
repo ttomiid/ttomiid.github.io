@@ -24,7 +24,7 @@ body {
   height: 100vh;
   background-color: #191c32;
   color: #fff;
-  min-height: 500vh;
+  min-height: 800vh;
 }
 .navbar {
     display: flex;
@@ -530,7 +530,7 @@ body {
   
     .wrapper{
       width: 70vh;
-      min-height: 1350vh;
+      min-height: 1450vh;
       padding-right: 480px;
     }
 

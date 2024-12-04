@@ -470,10 +470,10 @@ h1 {
 
 .container_typing{
   animation: animacion 2.5s steps(25), transparent .5s step-end infinite alternate;
-  width: 8.25em;
+  width: 9.5em;
   white-space: nowrap;
   overflow: hidden;
-  font-size: 9ch;
+  font-size: 7.45ch;
   border-right: 3px solid;
 }
 
