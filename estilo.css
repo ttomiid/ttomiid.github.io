@@ -524,14 +524,14 @@ html{
 }
 /* SECCION CONTACTO */
 .contacto{
-    background-image: url(img/hacking2.jpg);
+    /*background-image: url(img/background_contact.png);*/
     background-color: #1e2326;
     color: #fff;
     padding: 50px 0;
 }
 .contacto .contenido-seccion{
-    max-width: 1100px;
-    margin: auto;
+    max-width: 1110px;
+    margin:auto;
 }
 .contacto h2{
     font-size: 48px;
@@ -540,13 +540,10 @@ html{
     padding: 20px 0;
 }
 .contacto .fila{
-    display: flex;
+    display:flex;
 }
-.contacto .col{
-    width: 50%;
-    padding: 10px;
-    position: relative;
-}
+
+
 .contacto .col input, .contacto .col textarea{
     display: block;
     width: 100%;
