@@ -85,10 +85,10 @@ html{
     list-style: none;
 }
 .contenedor-header header nav ul li a{
-    text-align: none;
+    /*text-align: none;*/
+    text-align: right;
     color: #fff;
-    margin: 0 15px;
-    padding: 3px;
+    margin: 0px 15px;
     transition: .5s;
     text-decoration: none;
 }
