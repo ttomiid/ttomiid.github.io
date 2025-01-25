@@ -26,12 +26,60 @@ html{
     align-items: center;
     padding: 15px 20px;
 }
-.contenedor-header header .logo a{
-    font-family: 'Righteous';
-    font-size: 36px;
-    color: #1CB698;
-    text-decoration: none;
+
+/*H2*/
+.contenedor-header header .logo h2{
+    font-size: 2.5rem;
+    position: absolute;
+    top: 1px;
+    left: 5px;
 }
+
+.border {
+    color: #1e2326;
+    text-shadow: 
+    -1px -1px 0 white,
+    1px -1px 0 white,
+    1px 1px 0 white,
+    -1px 1px 0 white
+}
+
+.wave{
+    color: #1CB698;
+    animation: wave 3s ease-in-out infinite;
+}
+
+@keyframes wave {
+    0%, 100%{
+        clip-path: polygon(
+            0% 47%,
+            10% 48%,
+            33% 54%,
+            54% 60%,
+            70% 61%,
+            84% 59%,
+            100% 52%,
+            100% 100%,
+            0% 100%
+        );
+    }
+
+    50% {
+        clip-path: polygon(
+            0% 60%,
+            15% 65%,
+            34% 66%,
+            51% 62%,
+            67% 50%,
+            84% 45%,
+            100% 46%,
+            100% 100%,
+            0% 100%
+        );
+    }
+}
+
+
 .contenedor-header header ul{
     display: flex;
     list-style: none;
@@ -87,8 +135,8 @@ html{
     font-family: 'Righteous';
 }
 .inicio .contenido-banner h2{
-    font-size: 15px;
-    font-weight: normal;
+    font-size: 22px;
+    /*font-weight: normal;*/
 }
 .inicio .contenido-banner .redes a{
     color: #fff;
@@ -641,6 +689,9 @@ footer .arriba{
     line-height: 50px;
     font-size: 18px;
 }
+
+
+
 /* SECCION RESPONSIVE */
 @media screen and (max-width:980px){
     nav{
@@ -663,6 +714,12 @@ footer .arriba{
     nav.responsive ul li{
         border-bottom: 1px solid #fff;
         padding: 10px 0;
+    }
+
+    .contenedor-header header .logo h2{
+        font-size: 2rem;
+        top: 10px;
+        left: 45px;
     }
 }
 @media screen and (max-width:700px){
@@ -709,4 +766,6 @@ footer .arriba{
     .contacto .fila .col{
         width: 100%;
     }
+
+
 }
