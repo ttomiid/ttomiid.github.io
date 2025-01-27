@@ -222,6 +222,7 @@ html{
 .inicio .contenido-banner .redes a:hover{
     background-color: #1CB698;
 }
+
 .sobremi{
     background-color: #1e2326;
     color: #fff;
@@ -743,6 +744,11 @@ footer .redes a{
     font-size: 20px;
     transition: .3s;
 }
+
+footer .redes a:hover{
+    background-color: #1CB698;
+}
+
 footer .arriba{
     display: block;
     width: 50px;
@@ -756,6 +762,11 @@ footer .arriba{
     border-radius: 50%;
     line-height: 50px;
     font-size: 18px;
+    transition: .3s;
+}
+
+footer .arriba:hover{
+    background-color: #15856e;
 }
 
 
