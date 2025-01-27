@@ -35,13 +35,35 @@
             </div>
             <nav id="nav">
                 <ul>
-                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
-                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
-                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
-                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
-                    <li><a href="#portfolio" onclick="seleccionar()">PORTAFOLIO</a></li>
-                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                    <li><a href="#inicio" onclick="seleccionar()" id="home">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()" id="about">SOBRE&nbsp;MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()" id="skillss">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()" id="resume">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()" id="portafolio">PORTAFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()" id="contact">CONTACTO</a></li>
+                    <div class="translate">
+                        <a href="#" id="idioma" class="idioma">
+                            <img src="" alt="Icono bandera">
+                            <img src="img/bottom.svg" alt="Icono bottom">
+                        </a>
+                        <ul id="idiomas" class="idiomas">
+                            <li class="opcion">
+                                <a href="#">
+                                    <img src="img/ESP.png" alt="Icono bandera">
+                                    <span>ESP</span>
+                                </a>
+                            </li>
+                            <li class="opcion">
+                                <a href="#">
+                                    <img src="img/USA.png" alt="">
+                                    <span>USA</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </ul>
+
+                
             </nav>
             <div class="nav-responsive" onclick="mostrarOcultarMenu()">
                 <i class="fa-solid fa-bars"></i>
@@ -70,33 +92,22 @@
     <!-- SECCION SOBRE MI -->
     <section id="sobremi" class="sobremi">
         <div class="contenido-seccion">
-            <h2>Sobre Mí</h2>
-            <p><span>Hola, soy Tomás Delgado, </span> 
-                soy estudiante de la carrera de
-        Licenciatura en Seguridad Informática en la Universidad Siglo 21.
-        Me he desempeñado como instructor en plataformas como
-        Udemy y EC-Council Learning realizando cursos relacionados con
-        la programación y ciberseguridad (personal y corporativa). Mi
-        fuerte en la programación son los lenguajes Python y C.
-        Cuento con las certificaciones Experto Universitario en Ethical
-        Hacking por la Universidad Tecnológica Nacional y Ethical
-        Hacking Essentials (EHE) de EC-Council, entre otras. Además,
-        poseo experiencia de nivel medio/alto en el manejo de sistemas
-        GNU/Linux y Windows.
+            <h2 id="about_title">Sobre Mí</h2>
+            <p id="about_description"><span>Hola, soy Tomás Delgado, </span> soy estudiante de la carrera de Licenciatura en Seguridad Informática en la Universidad Siglo 21. Me he desempeñado como instructor en plataformas como Udemy y EC-Council Learning realizando cursos relacionados con la programación y ciberseguridad (personal y corporativa). Mi fuerte en la programación son los lenguajes Python y C. Cuento con las certificaciones Experto Universitario en Ethical Hacking por la Universidad Tecnológica Nacional y Ethical Hacking Essentials (EHE) de EC-Council, entre otras. Además, poseo experiencia de nivel medio/alto en el manejo de sistemas GNU/Linux y Windows.
             </p>
 
             <div class="fila">
                 <!-- datos personales -->
                 <div class="col">
-                    <h3>Datos Personales</h3>
+                    <h3 id="pesronal_data_title">Datos Personales</h3>
                     <ul>
                         <li>
-                            <strong>Cumpleaños</strong>
+                            <strong id="birthday">Cumpleaños</strong>
                             18-02-2004
                         </li>
                         <li>
-                            <strong>Teléfono</strong>
-                            +54 2324 462278
+                            <strong id="number_phone">Teléfono</strong>
+                            +54 9 2324 462278
                         </li>
                         <li>
                             <strong>Email</strong>
@@ -107,11 +118,11 @@
                             <a href="https://ttomiid.github.io/" style="text-decoration: none;">www.ttomiid.github.io</a>
                         </li>
                         <li>
-                            <strong>Dirección</strong>
+                            <strong id="address">Dirección</strong>
                             Mercedes, Buenos Aires
                         </li>
                         <li>
-                            <strong>Cargo</strong>
+                            <strong id="job_position">Cargo</strong>
                             <span>Instructor</span>
                         </li>
                     </ul>
@@ -119,19 +130,19 @@
 
                 <!-- intereses -->
                 <div class="col">
-                    <h3>Intereses</h3>
+                    <h3 id="interests_title">Intereses</h3>
                     <div class="contenedor-intereses">
                         <div class="interes">
                             <i class="fa-solid fa-laptop-code"></i>
-                            <span>PROGRAMAR</span>
+                            <span id="programming">PROGRAMAR</span>
                         </div>
                         <div class="interes">
                             <i class="fa-solid fa-headphones"></i>
-                            <span>MUSICA</span>
+                            <span id="music">MUSICA</span>
                         </div>
                         <div class="interes">
                             <i class="fa-solid fa-network-wired"></i>
-                            <span>REDES</span>
+                            <span id="networks">REDES</span>
                         </div>
                         <div class="interes">
                             <i class="fa-brands fa-linux"></i>
@@ -139,19 +150,19 @@
                         </div>
                         <div class="interes">
                             <i class="fa-solid fa-futbol"></i>
-                            <span>FUTBOL</span>
+                            <span id="soccer">FUTBOL</span>
                         </div>
                         <div class="interes">
                             <i class="fa-solid fa-book"></i>
-                            <span>ENSEÑANZA</span>
+                            <span id="teaching">ENSEÑANZA</span>
                         </div>
                         <div class="interes">
                             <i class="fa-solid fa-car"></i>
-                            <span>AUTOS</span>
+                            <span id="cars">AUTOS</span>
                         </div>
                         <div class="interes">
                             <i class="fa-solid fa-flag"></i>
-                            <span>CTF</span>
+                            <span>CTF's</span>
                         </div>
                         
                     </div>
@@ -160,7 +171,8 @@
             
         <a href="Curriculum Vitae - Tomás Delgado - 2025.pdf" style="text-decoration: none;" target="_blank">
             <button>
-                Descargar CV <i class="fa-solid fa-download"></i>
+                <p id="download_cv" style="display: inline;">Descargar CV</p>
+                <i class="fa-solid fa-download"></i>
                 <span class="overlay"></span>
             </button>
         </a>
@@ -171,11 +183,11 @@
     <!-- SECCION SKILLS -->
     <section class="skills" id="skills">
         <div class="contenido-seccion">
-            <h2>Skills</h2>
+            <h2 id="skills_title">Skills</h2>
             <div class="fila">
                 <!-- Technical Skill -->
                 <div class="col">
-                    <h3>Technical Skills</h3>
+                    <h3 id="technical_skills_title">Technical Skills</h3>
                     <div class="skill">
                         <span>Python</span>
                         <div class="barra-skill">
@@ -209,7 +221,7 @@
                         </div>
                     </div>
                     <div class="skill">
-                        <span>Redes</span>
+                        <span id="networks_skill">Redes</span>
                         <div class="barra-skill">
                             <div class="progreso">
                                 <span>65%</span>
@@ -219,9 +231,9 @@
                 </div>
                 <!-- Professional Skills -->
                 <div class="col">
-                    <h3>Professional Skills</h3>
+                    <h3 id="professional_skills_title">Professional Skills</h3>
                     <div class="skill">
-                        <span>Comunicación</span>
+                        <span id="communication">Comunicación</span>
                         <div class="barra-skill">
                             <div class="progreso">
                                 <span>80%</span>
@@ -229,7 +241,7 @@
                         </div>
                     </div>
                     <div class="skill">
-                        <span>Trabajo en Equipo</span>
+                        <span id="teamwork">Trabajo en Equipo</span>
                         <div class="barra-skill">
                             <div class="progreso">
                                 <span>70%</span>
@@ -237,7 +249,7 @@
                         </div>
                     </div>
                     <div class="skill">
-                        <span>Creatividad</span>
+                        <span id="creativity">Creatividad</span>
                         <div class="barra-skill">
                             <div class="progreso">
                                 <span>99%</span>
@@ -245,7 +257,7 @@
                         </div>
                     </div>
                     <div class="skill">
-                        <span>Dedicación</span>
+                        <span id="dedication">Dedicación</span>
                         <div class="barra-skill">
                             <div class="progreso">
                                 <span>75%</span>
@@ -253,7 +265,7 @@
                         </div>
                     </div>
                     <div class="skill">
-                        <span>Proyect Management</span>
+                        <span id="proyect_management">Proyect Management</span>
                         <div class="barra-skill">
                             <div class="progreso">
                                 <span>50%</span>
@@ -268,10 +280,10 @@
     <!-- SECCION CURRICULUM -->
     <section id="curriculum" class="curriculum">
         <div class="contenido-seccion">
-            <h2>Curriculum</h2>
+            <h2 id="resume_title">Curriculum</h2>
             <div class="fila">
                 <div class="col izquierda">
-                    <h3>Educación</h3>
+                    <h3 id="formal_education">Educación formal</h3>
                     <div class="item izq">
                         <h4>Seguridad Informatica</h4>
                         <span class="casa">Universidad Siglo 21</span>
@@ -281,6 +293,8 @@
                             <div class="circuloi"></div>
                         </div>
                     </div>
+
+
                     <div class="item izq">
                         <h4>Sistemas de información</h4>
                         <span class="casa">Universidad Nacional de Lujan</span>
@@ -342,6 +356,7 @@
         <div class="contenido-seccion">
             <h2>PORTAFOLIO</h2>
             <div class="galeria">
+
                 <div class="proyecto">
                     <img src="img/retrieveinfo.png" alt="">
                     <div class="overlay">
@@ -357,6 +372,7 @@
                         </a>
                     </div>
                 </div>
+
                 <div class="proyecto">
                     <img src="img/python.png" alt="">
                     <div class="overlay">
@@ -429,13 +445,18 @@
                 <!-- Formulario -->
                 <div class="col">
                     <form action="https://formsubmit.co/tomasalejodelgado@outlook.com" method="POST">
+                        <h3>Nombre</h3>
                         <input type="name" name="name" id="name" placeholder="Tú Nombre" required>
+                        <h3>Telefono</h3>
                         <input type="phone" name="phone" id="phone" placeholder="Número telefónico" required>
+                        <h3>Correo electronico</h3>
                         <input type="email" name="email" id="email" placeholder="Dirección de correo" required>
+                        <h3>Tema</h3>
                         <input type="tema" name="tema" id="tema" placeholder="Tema" required>
+                        <h3>Mensaje</h3>
                         <textarea name="message" id="message" cols="30" rows="10" placeholder="Mensaje" required></textarea>
                         <button type="submit">
-                            Enviar Mensaje&nbsp;&nbsp;<i class="fa-solid fa-paper-plane"></i>
+                            Enviar Mensaje  <i class="fa-solid fa-paper-plane"></i>
                             <span class="overlay"></span>
                             <input type="hidden" name="_next" value="http://ttomiid.github.io/">
                             <input type="hidden" name="_captcha" value="false">
