@@ -69,7 +69,7 @@ const phone = document.getElementById('phone');
 const email = document.getElementById('email');
 const tema = document.getElementById('tema');
 const message = document.getElementById('message');
-
+let idioma_actual_texto = document.getElementById('idioma_actual_texto');
 
 //Toggle List IDIOMAS
 
@@ -95,6 +95,13 @@ opcionesArray.forEach((opcion)=>{
 
 function establecerIdioma(idioma){
     idiomaActual.getElementsByTagName('img')[0].src = `img/${idioma}.png`;
+    if(idioma == 'ESP'){
+        idioma_actual_texto.textContent = "Español(ES)"
+    }
+    else if(idioma == "USA"){
+        idioma_actual_texto.textContent = "English(US)"
+    }
+    
     switch(idioma){
         case 'USA':
             overview_title_web.textContent = "Tomás Delgado | Portfolio";

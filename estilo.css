@@ -812,8 +812,8 @@ footer .arriba:hover{
     .idioma{
         display: flex;
         align-items: left;
-        gap: 15px;
-        padding: 15px;
+        gap: 16.4px;
+        padding: 10px;
         top: 0px;
     }
 
