@@ -73,9 +73,16 @@ const message = document.getElementById('message');
 
 //Toggle List IDIOMAS
 
-idiomaActual.addEventListener('click',()=>{
+idiomaActual.addEventListener('click',(event)=>{
     listaIdiomas.classList.toggle('toggle');
+    event.stopPropagation(); // Evita que el clic se propague al documento
 });
+
+document.addEventListener("click", (event) => {
+    if (!listaIdiomas.contains(event.target) && !idiomaActual.contains(event.target)) {
+      listaIdiomas.classList.remove("toggle");
+    }
+  });
 
 const opcionesArray = Array.from(idiomas);
 
