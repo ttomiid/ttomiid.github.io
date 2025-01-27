@@ -133,10 +133,12 @@ html{
     top: -4px;
     /*border: 1px solid rgb(219, 219, 219);*/
     position: relative;
+    transition: 0.5s;
 }
 
 .idioma:hover{
     background-color: rgb(228, 228, 228);
+    border-radius: 20px;
 }
 
 .idioma li{
@@ -802,6 +804,8 @@ footer .arriba:hover{
         padding: 10px 0;
     }
 
+    
+
     .contenedor-header header .logo h2{
         font-size: 2rem;
         top: 10px;
@@ -814,6 +818,12 @@ footer .arriba:hover{
         gap: 16.4px;
         padding: 10px;
         top: 0px;
+        transition: 1s;
+    }
+
+    .idioma:hover{
+        background-color: rgb(228, 228, 228);
+        border-radius: 0px;
     }
 
     /* Lista de idiomas */
@@ -824,6 +834,8 @@ footer .arriba:hover{
         flex-direction: column;
         /*visibility: hidden;*/
     }
+
+    
 }
 @media screen and (max-width:700px){
     .sobremi .fila{
