@@ -2,6 +2,8 @@ const idiomaActual = document.getElementById('idioma');
 const listaIdiomas = document.getElementById('idiomas');
 const idiomas = document.getElementsByClassName('opcion');
 let menuVisible = false;
+const overview_title_web = document.getElementById('overview_title_web');
+const web_title = document.getElementById('web_title');
 const nav_home = document.getElementById('home');
 const nav_about = document.getElementById('about');
 const nav_skills = document.getElementById('skillss');
@@ -34,6 +36,40 @@ const dedication = document.getElementById('dedication');
 const proyect_management = document.getElementById('proyect_management');
 const resume_title = document.getElementById('resume_title');
 const formal_education = document.getElementById('formal_education');
+const seg_inf = document.getElementById('seg_inf');
+const seg_inf_description = document.getElementById('seg_inf_description');
+const sis_info = document.getElementById("sis_info");
+const sis_info_description = document.getElementById("sis_info_description");
+const baccalaureate = document.getElementById('baccalaureate');
+const baccalaureate_description = document.getElementById('baccalaureate_description');
+const work_experience_title = document.getElementById('work_experience_title');
+const date_eccouncil = document.getElementById('date_eccouncil');
+const eccouncil_description_work = document.getElementById('eccouncil_description_work');
+const udemy_description = document.getElementById('udemy_description');
+const electromechanical_technician = document.getElementById('electromechanical_technician');
+const portfolio_title = document.getElementById('portfolio_title');
+const retrieveinfo_description = document.getElementById('retrieveinfo_description');
+const project_view1 = document.getElementById('project_view1');
+const pynumverify_description = document.getElementById('pynumverify_description');
+const project_view2 = document.getElementById('project_view2');
+const view_site1 = document.getElementById('view_site1');
+const easypentesting_description = document.getElementById('easypentesting_description');
+const project_view3 = document.getElementById('project_view3');
+const web_tp2_description = document.getElementById('web_tp2_description');
+const project_view4 = document.getElementById('project_view4');
+const contact_title = document.getElementById('contact_title');
+const contact_name = document.getElementById('contact_name');
+const contact_phone = document.getElementById('contact_phone');
+const contact_email = document.getElementById('contact_email');
+const contact_subject = document.getElementById('contact_subject');
+const contact_message = document.getElementById("contact_message");
+const contact_send_button = document.getElementById('contact_send_button');
+const name = document.getElementById('name');
+const phone = document.getElementById('phone');
+const email = document.getElementById('email');
+const tema = document.getElementById('tema');
+const message = document.getElementById('message');
+
 
 //Toggle List IDIOMAS
 
@@ -54,6 +90,8 @@ function establecerIdioma(idioma){
     idiomaActual.getElementsByTagName('img')[0].src = `img/${idioma}.png`;
     switch(idioma){
         case 'USA':
+            overview_title_web.textContent = "Tomás Delgado | Portfolio";
+            web_title.textContent = "Tomás Delgado | Portfolio";
             nav_home.textContent = 'HOME';
             nav_about.textContent = 'ABOUT';
             nav_skills.textContent = 'SKILLS'
@@ -86,11 +124,41 @@ function establecerIdioma(idioma){
             proyect_management.textContent = "Proyect Management";
             resume_title.textContent = "Resume";
             formal_education.textContent = "Formal education";
+            seg_inf.textContent = "Bachelor's Degree in Computer Security";
+            seg_inf_description.textContent = "Design IT security strategies, define requirements for their implementation and develop internal policies to manage complex incidents. Lead risk analysis, assessing assets, threats and vulnerabilities, and establish control systems and continuous improvement. Advise on forensic analysis of devices and coordinate interdisciplinary teams to investigate incidents.";
+            sis_info.textContent = "Bachelor's Degree in Information Systems";
+            sis_info_description.textContent = "Design of information systems in distributed environments as well as in programming, databases and networks.";
+            baccalaureate.textContent = "Baccalaureate";
+            baccalaureate_description.textContent = "General academic training with a solid technical background in areas related to mechanics, electricity and automation.";
+            work_experience_title.textContent = "Work experience";
+            date_eccouncil.textContent = "2025 - actuality";
+            eccouncil_description_work.textContent = "Course licensing and collaboration of my training courses on the EC-Council Learning CodeRed platform.";
+            udemy_description.textContent = "Professional development as an instructor teaching courses on programming languages such as Perl and Python. Currently I have +8500 students among all my courses.";
+            electromechanical_technician.textContent = "Electromechanical Technician - Internship";
+            portfolio_title.textContent = "PORTFOLIO";
+            retrieveinfo_description.textContent = "RetrieveInfo is an automated tool for extracting and collecting key information from Windows systems using native command prompt (CMD) commands.";
+            project_view1.textContent = "See project";
+            pynumverify_description.textContent = "PyNumVerify is a Python tool that allows users to validate phone numbers using the API Layer service.";
+            project_view2.textContent = "See project";
+            view_site1.textContent = "View site";
+            easypentesting_description.textContent = "An automated tool to run and simplify the use of Nmap, optimizing scanning and reporting tasks with greater efficiency and ease.";
+            project_view3.textContent = "See project";
+            web_tp2_description.textContent = "Front-End website for a 2D MMORPG game using HTML5, CSS3, PHP7 and Boostrap";
+            project_view4.textContent = "See project";
+            contact_title.textContent = "CONTACT";
+            contact_send_button.textContent = "Send message "
+            name.placeholder = "Name";
+            phone.placeholder = "Phone number";
+            email.placeholder  = "E-mail address";
+            tema.placeholder = "Subject";
+            message.placeholder = "Message";
 
 
             break;
         
         case 'ESP':
+            overview_title_web.textContent = "Tomás Delgado | Portafolio";
+            web_title.textContent = "Tomás Delgado | Portafolio";
             nav_home.textContent = 'INICIO';
             nav_skills.textContent = 'HABILIDADES'
             nav_resume.textContent = 'CURRICULUM';
@@ -122,6 +190,35 @@ function establecerIdioma(idioma){
             proyect_management.textContent = "Gestión de proyectos";
             resume_title.textContent = "Curriculum";
             formal_education.textContent = "Educación formal";
+            seg_inf.textContent = "Licenciatura en Seguridad Informática";
+            seg_inf_description.textContent = "Diseñar estrategias de seguridad informática, definir requisitos para su implementación y desarrollar políticas internas para gestionar incidentes complejos. Liderar análisis de riesgos, evaluando activos, amenazas y vulnerabilidades, y establecer sistemas de control y mejora continua. Asesorar en análisis forense de dispositivos y coordinar equipos interdisciplinarios para investigar incidentes.";
+            sis_info.textContent = "Licenciatura en Sistemas de Información";
+            sis_info_description.textContent = "Diseño de sistemas de información en ambientes distribuidos como así también en programación, bases de datos y redes.";
+            baccalaureate.textContent = "Bachillerato";
+            baccalaureate_description.textContent = "Formación académica general con una sólida preparación técnica en áreas vinculadas a la mecánica, la electricidad y la automatización."
+            work_experience_title.textContent = "Experiencia laboral";
+            date_eccouncil.textContent = "2025 - actualidad";
+            eccouncil_description_work.textContent = "Licenciamiento de cursos y colaboración de mis formaciones en la plataforma de EC-Council Learning CodeRed";
+            udemy_description.textContent = "Desarrollo profesional como instructor dictando cursos sobre programación en lenguajes como Perl y Python. Actualmente cuento con +8500 estudiantes entre todos mis cursos.";
+            electromechanical_technician.textContent = "Tecnico Electromecanico - Practicas";
+            portfolio_title.textContent = "PORTAFOLIO";
+            retrieveinfo_description.textContent = "RetrieveInfo es una herramienta automatizada para extraer y recopilar información clave de sistemas Windows utilizando comandos nativos del símbolo del sistema (CMD)";
+            project_view1.textContent = "Ver proyecto";
+            pynumverify_description.textContent = "PyNumVerify es una herramienta de Python que permite a los usuarios validar números de teléfono mediante el servicio API Layer.";
+            project_view2.textContent = "Ver proyecto";
+            view_site1.textContent = "Ver sitio";
+            easypentesting_description.textContent = "Una herramienta automatizada para ejecutar y simplificar el uso de Nmap, optimizando tareas de escaneo y generación de reportes con mayor eficiencia y facilidad.";
+            project_view3.textContent = "Ver proyecto";
+            web_tp2_description.textContent = "Front-End de sitio web para un juego 2D MMORPG utilizando HTML5, CSS3, PHP7 y Boostrap";
+            project_view4.textContent = "Ver proyecto";
+            contact_title.textContent = "CONTACTO";
+            contact_send_button.textContent = "Enviar mensaje "
+            name.placeholder = "Nombre";
+            phone.placeholder = "Numero telefónico";
+            email.placeholder  = "Correo electrónico";
+            tema.placeholder = "Tema";
+            message.placeholder = "Mensaje";
+
 
 
             break;
@@ -258,11 +355,12 @@ document.addEventListener('DOMContentLoaded',()=>{
         case 'en-ZA':
             establecerIdioma('USA');
             break;
-
+        
         case 'en-ES':
             establecerIdioma('USA');
             break;
         
+    
         default:
             break;
     }
