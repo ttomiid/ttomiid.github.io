@@ -258,8 +258,11 @@ document.addEventListener('DOMContentLoaded',()=>{
         case 'en-ZA':
             establecerIdioma('USA');
             break;
+
+        case 'en-ES':
+            establecerIdioma('USA');
+            break;
         
-    
         default:
             break;
     }
