@@ -133,7 +133,7 @@ function establecerIdioma(idioma){
 }
 
 document.addEventListener('DOMContentLoaded',()=>{
-    //alert(navigator.language)
+    alert(navigator.language)
     switch (navigator.language) {
         case 'en-US':
             establecerIdioma('USA');
