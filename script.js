@@ -85,7 +85,7 @@ function establecerIdioma(idioma){
             dedication.textContent = "Dedication";
             proyect_management.textContent = "Proyect Management";
             resume_title.textContent = "Resume";
-            formal_education.textContent = "Formal education"
+            formal_education.textContent = "Formal education";
 
 
             break;
@@ -121,7 +121,7 @@ function establecerIdioma(idioma){
             dedication.textContent = "Dedicación";
             proyect_management.textContent = "Gestión de proyectos";
             resume_title.textContent = "Curriculum";
-            formal_education.textContent = "Educación formal"
+            formal_education.textContent = "Educación formal";
 
 
             break;
@@ -135,21 +135,130 @@ function establecerIdioma(idioma){
 document.addEventListener('DOMContentLoaded',()=>{
     //alert(navigator.language)
     switch (navigator.language) {
-        case 'en-US':
-            establecerIdioma('USA');
-            break;
         
+        // HISPANO HABLANTE
         case 'es-419':
-            establecerIdioma('ESP')
+            establecerIdioma('ESP');
             break;
 
         case 'es-US':
-            establecerIdioma('ESP')
+            establecerIdioma('ESP');
+            break;
+        
+        case 'es-MX':
+            establecerIdioma('ESP');
+            break;
+
+        case 'es-AR':
+            establecerIdioma('ESP');
             break;
         
         case 'es-ES':
             establecerIdioma('ESP');
             break;
+        
+        case 'es-CO':
+            establecerIdioma('ESP');
+            break;
+        
+        case 'es-CL':
+            establecerIdioma('ESP');
+            break;
+
+        case 'es-PE':
+            establecerIdioma('ESP');
+            break;
+
+        case 'es-VE':
+            establecerIdioma('ESP');
+            break;
+
+        case 'es-UY':
+            establecerIdioma('ESP');
+            break;
+
+        case 'es-EC':
+            establecerIdioma('ESP');
+            break;
+
+        case 'es-BO':
+            establecerIdioma('ESP');
+            break;
+
+        case 'es-CR':
+            establecerIdioma('ESP');
+            break;
+
+        case 'es-CU':
+            establecerIdioma('ESP');
+            break;
+
+        case 'es-DO':
+            establecerIdioma('ESP');
+            break;
+
+        case 'es-GT':
+            establecerIdioma('ESP');
+            break;
+
+        case 'es-HN':
+            establecerIdioma('ESP');
+            break;
+
+        case 'es-PR':
+            establecerIdioma('ESP');
+            break;
+
+        case 'es-PY':
+            establecerIdioma('ESP');
+            break;
+
+        case 'es-SV':
+            establecerIdioma('ESP');
+            break;
+
+        case 'es-NI':
+            establecerIdioma('ESP');
+            break;
+
+        //HABLA INGLESA
+
+        case 'en-US':
+            establecerIdioma('USA');
+            break;
+        
+        case 'en-001':
+            establecerIdioma('USA');
+            break;
+
+        case 'en-GB':
+            establecerIdioma('USA');
+            break;
+
+        case 'en-CA':
+            establecerIdioma('USA');
+            break;
+
+        case 'en-AU':
+            establecerIdioma('USA');
+            break;
+
+        case 'en-NZ':
+            establecerIdioma('USA');
+            break;
+
+        case 'en-IN':
+            establecerIdioma('USA');
+            break;
+
+        case 'en-IE':
+            establecerIdioma('USA');
+            break;
+
+        case 'en-ZA':
+            establecerIdioma('USA');
+            break;
+        
     
         default:
             break;
