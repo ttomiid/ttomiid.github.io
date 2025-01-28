@@ -395,11 +395,10 @@ function mostrarOcultarMenu(){
 }
 
 function seleccionar(){
-    // Oculta el menú una vez que se selecciona una opción
-    document.getElementById("nav").classList.remove("responsive");
+    //oculto el menu una vez que selecciono una opcion
+    document.getElementById("nav").classList = "";
     menuVisible = false;
 }
-
 
 document.addEventListener("click", function(event) {
     const nav = document.getElementById("nav");
@@ -410,7 +409,7 @@ document.addEventListener("click", function(event) {
         nav.classList.remove("responsive");
         menuVisible = false;
     }
-}); 
+});
 
 
 
