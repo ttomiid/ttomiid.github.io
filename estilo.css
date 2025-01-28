@@ -969,7 +969,7 @@ footer .arriba:hover{
     /* Lista de idiomas */
     .idiomas{
         position: absolute;
-        top: 280px;
+        top: 330px;
         display: flex;
         flex-direction: column;
         /*visibility: hidden;*/
