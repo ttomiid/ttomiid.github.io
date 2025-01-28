@@ -158,7 +158,7 @@ function establecerIdioma(idioma){
             easypentesting_description.textContent = "An automated tool to run and simplify the use of Nmap, optimizing scanning and reporting tasks with greater efficiency and ease.";
             project_view3.textContent = "See project";
             web_tp2_description.textContent = "Front-End website for a 2D MMORPG game using HTML5, CSS3, PHP7 and Boostrap";
-            project_view4.textContent = "See project";
+            project_view4.textContent = "View site";
             contact_title.textContent = "CONTACT";
             contact_send_button.textContent = "Send message "
             name.placeholder = "Name";
@@ -224,7 +224,7 @@ function establecerIdioma(idioma){
             easypentesting_description.textContent = "Una herramienta automatizada para ejecutar y simplificar el uso de Nmap, optimizando tareas de escaneo y generación de reportes con mayor eficiencia y facilidad.";
             project_view3.textContent = "Ver proyecto";
             web_tp2_description.textContent = "Front-End de sitio web para un juego 2D MMORPG utilizando HTML5, CSS3, PHP7 y Boostrap";
-            project_view4.textContent = "Ver proyecto";
+            project_view4.textContent = "Ver sitio";
             contact_title.textContent = "CONTACTO";
             contact_send_button.textContent = "Enviar mensaje "
             name.placeholder = "Nombre";
