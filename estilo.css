@@ -531,49 +531,60 @@ html{
     width: 49%;
     padding: 0 20px;
 }
+
 .curriculum .fila .col h3{
     font-size: 28px;
     font-family: 'Righteous';
     margin-bottom: 25px;
 }
+
 .curriculum .fila .izquierda{
     border-right: 2px solid #252A2E;
 }
+
 .curriculum .fila .derecha{
     border-left: 2px solid #252A2E;
 }
+
 .curriculum .fila .item{
     padding: 25px;
     margin-bottom: 30px;
     background-color: #252A2E;
     position: relative;
 }
+
 .curriculum .fila .item h4{
     font-size: 20px;
     margin-bottom: 10px;
 }
+
 .curriculum .fila .item .casa{
     color: #1CB698;
     font-size: 22px;
     font-weight: bold;
     display: block;
 }
+
 .curriculum .fila .item .fecha{
     display: block;
     color: #1CB698;
     margin-bottom: 10px;
 }
+
 .curriculum .fila .item p{
     line-height: 24px;
 }
+
 .curriculum .fila .izq{
     border-right: 2px solid #1CB698;
     margin-right: 20px;
 }
+
 .curriculum .fila .der{
     border-left: 2px solid #1CB698;
     margin-left: 20px;
 }
+
 .curriculum .fila .item .conectori{
     height: 2px;
     background-color: #1CB698;
@@ -583,6 +594,7 @@ html{
     right: -47px;
     z-index: 5;
 }
+
 .curriculum .fila .item .conectori .circuloi{
     display: block;
     height: 10px;
@@ -593,6 +605,7 @@ html{
     position: relative;
     bottom: 4px;
 }
+
 .curriculum .fila .item .conectord{
     height: 2px;
     background-color: #1CB698;
@@ -602,6 +615,7 @@ html{
     left: -47px;
     z-index: 5;
 }
+
 .curriculum .fila .item .conectord .circulod{
     display: block;
     height: 10px;
@@ -612,27 +626,32 @@ html{
     position: relative;
     bottom: 4px;
 }
+
 /* SECCION PORTFOLIO */
 .portfolio{
     background-color: #252A2E;
     color: #fff;
     padding: 50px 20px;
 }
+
 .portfolio .contenido-seccion{
     max-width: 1100px;
     margin: auto;
 }
+
 .portfolio h2{
     font-size: 48px;
     font-family: 'Righteous';
     text-align: center;
     padding: 20px 0;
 }
+
 .portfolio .galeria{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
+
 .portfolio .galeria .proyecto{
     position: relative;
     max-width: 340px;
@@ -640,10 +659,12 @@ html{
     margin: 10px;
     cursor: pointer;
 }
+
 .portfolio .galeria .proyecto img{
     width: 100%;
     display: block;
 }
+
 .portfolio .galeria .proyecto .overlay{
     position: absolute;
     top: 0;
@@ -660,16 +681,20 @@ html{
     opacity: 0;
     border-radius: 12.5px;
 }
+
 .portfolio .galeria .proyecto .overlay h3{
     margin-bottom: 20px;
     transition: 1s;
 }
+
 .portfolio .galeria .proyecto .overlay:hover{
     opacity: 1;
 }
+
 .portfolio .galeria .proyecto .overlay:hover h3{
     margin-bottom: 0px;
 }
+
 /* SECCION CONTACTO */
 .contacto{
     /*background-image: url(img/background_contact.png);*/
@@ -677,20 +702,22 @@ html{
     color: #fff;
     padding: 50px 0;
 }
+
 .contacto .contenido-seccion{
     max-width: 1110px;
     margin:auto;
 }
+
 .contacto h2{
     font-size: 48px;
     font-family: 'Righteous';
     text-align: center;
     padding: 20px 0;
 }
+
 .contacto .fila{
     display:flex;
 }
-
 
 .contacto .col input, .contacto .col textarea{
     display: block;
@@ -702,6 +729,7 @@ html{
     color: #fff;
     font-size: 18px;
 }
+
 .contacto button{
     cursor: pointer;
     background-color: transparent;
@@ -715,6 +743,7 @@ html{
     position: relative;
     z-index: 10;
 }
+
 .contacto button .overlay{
     position: absolute;
     top: 0;
@@ -725,12 +754,15 @@ html{
     z-index: -1;
     transition: 1s;
 }
+
 .contacto button:hover .overlay{
     width: 100%;
 }
+
 .contacto .col img{
     width: 100%;
 }
+
 .contacto .col .info{
     position: absolute;
     top: 40%;
@@ -740,12 +772,15 @@ html{
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
 .contacto .col .info ul{
     list-style: none;
 }
+
 .contacto .col .info ul li{
     margin-bottom: 20px;
 }
+
 .contacto .col .info ul li i{
     color: #1CB698;
     display: inline-block;
@@ -759,9 +794,11 @@ footer{
     position: relative;
     width: 100%;
 }
+
 footer .redes{
     margin-bottom: 20px;
 }
+
 footer .redes a{
     color: #fff;
     display: inline-block;
@@ -801,7 +838,6 @@ footer .arriba:hover{
 }
 
 
-
 /* SECCION RESPONSIVE */
 @media screen and (max-width:1520px){
     nav{
@@ -831,11 +867,6 @@ footer .arriba:hover{
     }
 
 
-
-    
-
-    
-
     .contenedor-header header .logo h2{
         font-size: 2rem;
         top: 10px;
@@ -862,6 +893,10 @@ footer .arriba:hover{
         display: flex;
         flex-direction: column;
         /*visibility: hidden;*/
+    }
+
+    #separator{
+        display: none;
     }
 
 
@@ -912,5 +947,7 @@ footer .arriba:hover{
         width: 100%;
     }
 
-
+    #separator{
+        display: none;
+    }
 }
