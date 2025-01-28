@@ -57,6 +57,16 @@ const easypentesting_description = document.getElementById('easypentesting_descr
 const project_view3 = document.getElementById('project_view3');
 const web_tp2_description = document.getElementById('web_tp2_description');
 const project_view4 = document.getElementById('project_view4');
+
+//AQUI LOS CURSOS
+const nav_course = document.getElementById('course');
+const courses_title = document.getElementById('courses_title');
+const course_title1 = document.getElementById('course_title1');
+const view_course1 = document.getElementById('view_course1');
+const course_title2 = document.getElementById('course_title2');
+const view_course2 = document.getElementById('view_course2');
+
+
 const contact_title = document.getElementById('contact_title');
 const contact_name = document.getElementById('contact_name');
 const contact_phone = document.getElementById('contact_phone');
@@ -159,6 +169,17 @@ function establecerIdioma(idioma){
             project_view3.textContent = "See project";
             web_tp2_description.textContent = "Front-End website for a 2D MMORPG game using HTML5, CSS3, PHP7 and Boostrap";
             project_view4.textContent = "View site";
+
+            //AQUI LOS CURSOS
+
+            nav_course.textContent = "COURSES";
+            courses_title.textContent = "COURSES";
+            course_title1.textContent = "Quick and easy introduction to Python programming";
+            view_course1.textContent = "See course";
+            course_title2.textContent = "Learn to program in Perl from 0";
+            view_course2.textContent = "See course";
+            
+
             contact_title.textContent = "CONTACT";
             contact_send_button.textContent = "Send message "
             name.placeholder = "Name";
@@ -226,6 +247,16 @@ function establecerIdioma(idioma){
             project_view3.textContent = "Ver proyecto";
             web_tp2_description.textContent = "Front-End de sitio web para un juego 2D MMORPG utilizando HTML5, CSS3, PHP7 y Boostrap";
             project_view4.textContent = "Ver sitio";
+
+            // AQUI LOS CURSOS
+            nav_course.textContent = "CURSOS";
+            courses_title.textContent = "CURSOS";
+            course_title1.textContent = "Introducción a la programación en Python fácil y rápido";
+            view_course1.textContent = "Ver curso";
+            course_title2.textContent = "Aprende a programar en Perl desde 0";
+            view_course2.textContent = "Ver curso";
+
+
             contact_title.textContent = "CONTACTO";
             contact_send_button.textContent = "Enviar mensaje "
             name.placeholder = "Nombre";
