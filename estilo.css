@@ -85,16 +85,19 @@ html{
     list-style: none;
 }
 .contenedor-header header nav ul li a{
-    /*text-align: none;*/
-    text-align: right;
+    text-align: center;
     color: #fff;
-    margin: 0px 13px;
+    margin: 0px 22.5px;
     transition: .5s;
     text-decoration: none;
+    display: flex; /* Coloca los elementos en una fila */
+    justify-content: space-between; /* Ajusta la separación */
 }
+
 .contenedor-header header nav ul li a:hover{
     color: #1CB698;
 }
+
 .nav-responsive{
     background-color: #1CB698;
     color:#fff;
@@ -107,22 +110,25 @@ html{
 .translate ul{
     padding-left: 0;
     list-style: none;
+    display: flex;
 }
 
 .translate img{
     width: 15px;
     height: 15px;
+    display: flex;
 }
 
 .translate{
     display: flex;
     justify-content: end;
     width: 95%;
-    margin: auto;
+    /*margin: auto;*/
 }
 
 .translate a{
     text-decoration: none;
+    display: flex;
 }
 
 .idioma{
@@ -143,6 +149,7 @@ html{
 
 .idioma li{
     width: 100%;
+    display: flex;
 }
 
 /* Lista de idiomas */
@@ -155,22 +162,26 @@ html{
     flex-direction: column;
     visibility: hidden;
     overflow: hidden;
+    display: flex;
+    border-radius: 10%;
 }
 
 
 .idiomas li a{
     display: block;
-    padding: 10px;
+    padding: 20px;
     font-size: 10px;
     color: rgb(85, 85, 85);
 }
 
 .idiomas li a:hover{
-    background-color: rgb(219, 219, 219)
+    background-color: rgb(219, 219, 219);
+    border-radius: 10%;
 }
 
 .idiomas li img{
     border-radius: 50%;
+    margin: 0px 10px;
 }
 
 .toggle{
@@ -781,7 +792,7 @@ footer .arriba:hover{
 
 
 /* SECCION RESPONSIVE */
-@media screen and (max-width:980px){
+@media screen and (max-width:1520px){
     nav{
         display: none;
     }
@@ -835,8 +846,9 @@ footer .arriba:hover{
         /*visibility: hidden;*/
     }
 
-    
+
 }
+
 @media screen and (max-width:700px){
     .sobremi .fila{
         display: block;

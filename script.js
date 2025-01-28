@@ -174,6 +174,7 @@ function establecerIdioma(idioma){
             overview_title_web.textContent = "Tomás Delgado | Portafolio";
             web_title.textContent = "Tomás Delgado | Portafolio";
             nav_home.textContent = 'INICIO';
+            nav_about.textContent = 'SOBRE MÍ';
             nav_skills.textContent = 'HABILIDADES'
             nav_resume.textContent = 'CURRICULUM';
             nav_portfolio.textContent = 'PORTAFOLIO';
