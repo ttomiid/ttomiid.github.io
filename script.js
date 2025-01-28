@@ -381,22 +381,39 @@ document.addEventListener('DOMContentLoaded',()=>{
     }
 });
 
+
 //Función que oculta o muestra el menu
 function mostrarOcultarMenu(){
     if(menuVisible){
         document.getElementById("nav").classList ="";
         menuVisible = false;
-    }else{
+    }
+    else{
         document.getElementById("nav").classList ="responsive";
         menuVisible = true;
     }
 }
 
 function seleccionar(){
-    //oculto el menu una vez que selecciono una opcion
-    document.getElementById("nav").classList = "";
+    // Oculta el menú una vez que se selecciona una opción
+    document.getElementById("nav").classList.remove("responsive");
     menuVisible = false;
 }
+
+
+document.addEventListener("click", function(event) {
+    const nav = document.getElementById("nav");
+    const navButton = document.querySelector(".nav-responsive");
+
+    // Si el clic no fue dentro del menú ni en el botón, ocultamos el menú
+    if (!nav.contains(event.target) && !navButton.contains(event.target) && menuVisible) {
+        nav.classList.remove("responsive");
+        menuVisible = false;
+    }
+}); 
+
+
+
 //Funcion que aplica las animaciones de las habilidades
 function efectoHabilidades(){
     var skills = document.getElementById("skills");
@@ -421,4 +438,5 @@ function efectoHabilidades(){
 window.onscroll = function(){
     efectoHabilidades();
 }
+
 

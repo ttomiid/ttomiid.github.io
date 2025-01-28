@@ -105,7 +105,10 @@ html{
     border-radius: 5px;
     cursor: pointer;
     display: none;
+    overflow: hidden;
+    transition: max-height 3s ease, opacity 0.3s ease; /* Animación */
 }
+
 
 .translate ul{
     padding-left: 0;
@@ -814,14 +817,36 @@ footer .arriba:hover{
         top: 75px;
         background-color: #252A2E;
         width: 180px;
+        overflow: hidden; /* Ocultar el contenido fuera del contenedor */
+        border-radius: 5px;
+        
     }
-    nav.responsive ul{
+
+    /* Estilo para la lista */
+    nav.responsive ul {
         display: block !important;
+        padding: 0;
+        margin: 0;
+        list-style: none;
     }
-    nav.responsive ul li{
+
+    /*nav.responsive ul{
+        display: block !important;
+    }*/
+    /*nav.responsive ul li{
         border-bottom: 1px solid #fff;
         padding: 10px 0;
+    }*/
+
+    /* Estilo para los elementos de la lista */
+    nav.responsive ul li {
+        border-bottom: 1px solid #fff;
+        padding: 10px 0;
+        text-align: center;
     }
+
+
+    
 
     
 
