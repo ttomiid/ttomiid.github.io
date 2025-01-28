@@ -75,12 +75,12 @@ let idioma_actual_texto = document.getElementById('idioma_actual_texto');
 
 idiomaActual.addEventListener('click',(event)=>{
     listaIdiomas.classList.toggle('toggle');
-    event.stopPropagation(); // Evita que el clic se propague al documento
+    event.stopInmediatePropagation(); // Evita que el clic se propague al documento
 });
 
 document.addEventListener("click", (event) => {
     if (!listaIdiomas.contains(event.target) && !idiomaActual.contains(event.target)) {
-      listaIdiomas.classList.remove("toggle");
+      listaIdiomas.classList.remove('toggle');
     }
   });
 

@@ -157,13 +157,17 @@ html{
     list-style: none;
     background-color:#252A2E;
     position: absolute;
-    top: 55px;
+    top: 70px;
     display: flex;
     flex-direction: column;
     visibility: hidden;
     overflow: hidden;
-    display: flex;
     border-radius: 10%;
+    display: none;          /* Oculta el menú por defecto */
+    opacity: 0;             /* Totalmente transparente */
+    transform: translateY(-20px); /* Empieza desplazada hacia arriba */
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Animación suave */
+
 }
 
 
@@ -186,9 +190,13 @@ html{
 
 .toggle{
     visibility: visible;
-    transform: scaleY(1); /* Expandido */
-    opacity: 1; /* Visible */
-    
+    display: block;         /* La lista se muestra */
+    opacity: 1;             /* Totalmente visible */
+    transform: translateY(0); /* Vuelve a su posición original */
+}
+
+.lista-idiomas:not(.toggle) {
+    display: none; /* Después de que se desvanece */
 }
 
 /* SECCION I N I C I O */
