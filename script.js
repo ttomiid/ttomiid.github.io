@@ -126,7 +126,7 @@ function establecerIdioma(idioma){
             soccer.textContent = "SOCCER";
             teaching.textContent = "TEACHING";
             cars.textContent = "CARS";
-            download_cv.textContent = "Download CV";
+            download_cv.textContent = "Download resume";
             skills_title.textContent = "Skills";
             technical_skills_title.textContent = "Technical Skills";
             networks_skill.textContent = "Networks";
