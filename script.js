@@ -115,7 +115,7 @@ function establecerIdioma(idioma){
     switch(idioma){
         case 'USA':
             overview_title_web.textContent = "Tomás Delgado | Cybersecurity Consultant";
-            web_title.textContent = "Tomás Delgado | Portfolio";
+            web_title.textContent = "Tomás Delgado | Cybersecurity Consultant";
             nav_home.textContent = 'HOME';
             nav_about.textContent = 'ABOUT';
             nav_skills.textContent = 'SKILLS'
@@ -193,7 +193,7 @@ function establecerIdioma(idioma){
         
         case 'ESP':
             overview_title_web.textContent = "Tomás Delgado | Cybersecurity Consultant";
-            web_title.textContent = "Tomás Delgado | Portafolio";
+            web_title.textContent = "Tomás Delgado | Cybersecurity Consultant";
             nav_home.textContent = 'INICIO';
             nav_about.textContent = 'SOBRE MÍ';
             nav_skills.textContent = 'HABILIDADES'
