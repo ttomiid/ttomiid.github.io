@@ -771,6 +771,10 @@ html{
     margin-bottom: 0px;
 }
 
+#verr:hover{
+    color: #111416;
+}
+
 /* SECCION CONTACTO */
 .contacto{
     /*background-image: url(img/background_contact.png);*/
