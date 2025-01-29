@@ -35,6 +35,30 @@ html{
     left: 5px;
 }
 
+#name_title {
+    transition: 0.5s; /* Se aplica la transición al estado inicial */
+    color: fff; /* O el color original */
+    border: 5px solid transparent; /* O el borde original */
+    border-radius: 0px; /* O el valor original */
+    
+}
+
+#name_title:hover {
+    color: #1CB698;
+    border-radius: 200px;
+}
+
+#job_title {
+    transition: 0.5s; /* Se aplica la transición al estado inicial */
+    color: fff; /* O el color original */
+    border: 5px solid transparent; /* O el borde original */
+    border-radius: 0px; /* O el valor original */
+}
+
+#job_title:hover {
+    color: #1CB698;
+}
+
 .border {
     color: #1e2326;
     text-shadow: 
@@ -148,12 +172,14 @@ html{
     border: 0.1px solid #fff;
     border-radius: 5px;
     left: 15%;
-
+    transition: 0.5s ease-in-out; /* Animación suave */
 }
+
 
 .idioma:hover{
     background-color:#1CB698;
     border-radius: 5px;
+    box-shadow: 0px 0px 20px 10px rgba(28, 182, 152, 0.7); /* Efecto de luz */
 
 }
 
@@ -220,6 +246,8 @@ html{
     display: flex;
     align-items: center;
 }
+
+
 .inicio .contenido-banner{
     padding: 20px;
     background-color: #1e2326;
@@ -227,15 +255,29 @@ html{
     margin: auto;
     text-align: center;
     border-radius: 40px;
+    transition: 1s;
 }
-.inicio .contenido-banner img{
+
+.inicio .contenido-banner:hover{
+    box-shadow: 0 0 20px 15px rgba(28, 182, 152, 0.5); /* Luz más suave y difusa */
+}
+
+.inicio .contenido-banner img {
     margin-top: 40px;
     border: 10px solid #1CB698;
     display: block;
     width: 60%;
     margin: auto;
     border-radius: 90px;
+    transition: 0.5s ease-in-out; /* Agregamos la transición en el estado base */
 }
+
+.inicio .contenido-banner img:hover {
+    border-radius: 200px; /* Cambia el radio al pasar el cursor */
+    border: 10px solid #15856e; /* Cambia el color del borde */
+    box-shadow: 0px 0px 10px 10px rgba(28, 182, 152, 0.7); /* Efecto de luz */
+}
+
 .inicio .contenido-banner h1{
     margin-top: 40px;
     font-size: 42px;
@@ -259,6 +301,7 @@ html{
     transition: .3s;
 }
 .inicio .contenido-banner .redes a:hover{
+    box-shadow: 0 0 20px 10px rgba(28, 182, 152, 0.5); /* Luz más suave y difusa */
     background-color: #1CB698;
 }
 
@@ -331,9 +374,12 @@ html{
     align-items: center;
     justify-content: center;
     transition: .3s;
+
 }.sobremi .fila .col .contenedor-intereses .interes:hover{
     background-color: #1CB698;
+    box-shadow: 0 0 15px 15px rgba(28, 182, 152, 0.5); /* Luz más suave y difusa */
 }
+
 .sobremi .fila .col .contenedor-intereses .interes i{
     font-size: 30px;
     margin-bottom: 10px;
@@ -696,6 +742,7 @@ html{
 }
 
 .portfolio .galeria .proyecto .overlay:hover{
+    box-shadow: 0 0 20px 15px rgba(28, 182, 152, 0.5); /* Luz más suave y difusa */
     opacity: 1;
 }
 
@@ -764,6 +811,7 @@ html{
 }
 
 .courses .galeria_course .course .overlay:hover{
+    box-shadow: 0 0 20px 15px rgba(28, 182, 152, 0.5); /* Luz más suave y difusa */
     opacity: 1;
 }
 
@@ -808,6 +856,11 @@ html{
     background-color:#1e2326;
     color: #fff;
     font-size: 18px;
+    transition: 0.8s;
+}
+
+.contacto .col input:hover, .contacto .col textarea:hover{
+    box-shadow: 0 0 20px 5px rgba(28, 182, 152, 0.5); /* Luz más suave y difusa */
 }
 
 .contacto button{
@@ -890,11 +943,12 @@ footer .redes a{
     line-height: 42px;
     margin: 40px 5px;
     font-size: 20px;
-    transition: .3s;
+    transition: .5s;
 }
 
 footer .redes a:hover{
     background-color: #1CB698;
+    box-shadow: 0 0 20px 15px rgba(28, 182, 152, 0.5); /* Luz más suave y difusa */
 }
 
 footer .arriba{
@@ -910,11 +964,12 @@ footer .arriba{
     border-radius: 50%;
     line-height: 50px;
     font-size: 18px;
-    transition: .3s;
+    transition: .8s;
 }
 
 footer .arriba:hover{
     background-color: #15856e;
+    box-shadow: 0 0 20px 15px rgba(28, 182, 152, 0.5); /* Luz más suave y difusa */
 }
 
 
