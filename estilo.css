@@ -232,9 +232,9 @@ html{
     margin-top: 40px;
     border: 10px solid #1CB698;
     display: block;
-    width: 70%;
+    width: 80%;
     margin: auto;
-    border-radius: 15%;
+    border-radius: 200px;
 }
 .inicio .contenido-banner h1{
     margin-top: 40px;
