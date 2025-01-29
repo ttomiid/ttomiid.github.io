@@ -131,7 +131,11 @@ html{
     cursor: pointer;
     display: none;
     overflow: hidden;
-    transition: max-height 3s ease, opacity 0.3s ease; /* Animación */
+    transition: 0.5s ease-in-out; /* Animación suave */
+}
+
+.nav-responsive:hover{
+    box-shadow: 0 0 10px 5px rgba(28, 182, 152, 0.5); /* Luz más suave y difusa */
 }
 
 
