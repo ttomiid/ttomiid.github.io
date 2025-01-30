@@ -120,10 +120,13 @@ function establecerIdioma(idioma){
             nav_about.textContent = 'ABOUT';
             nav_skills.textContent = 'SKILLS'
             nav_resume.textContent = 'RESUME';
-            nav_portfolio.textContent = 'PORTFOLIO';
+            nav_portfolio.textContent = 'PROJECTS';
             nav_contact.textContent = 'CONTACT';
-            about_title.textContent = 'About';
-            about_description.textContent = "Hi, I'm Tomás Delgado, I'm a student of the Bachelor's degree in Computer Security at Universidad Siglo 21. I have worked as an instructor in platforms such as Udemy and EC-Council Learning doing courses related to programming and cybersecurity (personal and corporate). My forte in programming are Python and C languages. I have the certifications Experto Universitario en Ethical Hacking by the Universidad Tecnológica Nacional and Ethical Hacking Essentials (EHE) by EC-Council, among others. In addition, I have medium/high level experience in handling GNU/Linux and Windows systems.";
+            about_title.textContent = 'ABOUT';
+            about_description.textContent = "Passionate about cybersecurity and teaching, I merge my technical knowledge with solid Python and C expertise. As an instructor at Udemy and EC-Council Learning, I have trained others in computer security and development. Certified in Ethical Hacking by UTN and EC-Council, with skills in GNU/Linux, Windows and networking. I am looking for challenges that allow me to continue growing and contributing to the world of security and technology 🚀🔐.";
+            /*
+            Hola, soy Tomás Delgado, soy estudiante de la carrera de Licenciatura en Seguridad Informática en la Universidad Siglo 21. Me he desempeñado como instructor en plataformas como Udemy y EC-Council Learning realizando cursos relacionados con la programación y ciberseguridad (personal y corporativa). Mi fuerte en la programación son los lenguajes Python y C. Cuento con las certificaciones Experto Universitario en Ethical Hacking por la Universidad Tecnológica Nacional y Ethical Hacking Essentials (EHE) de EC-Council, entre otras. Además, poseo experiencia de nivel medio/alto en el manejo de sistemas GNU/Linux y Windows.
+            */ 
             personal_data_title.textContent = "Personal data";
             birthday.textContent = "Birthday";
             number_phone.textContent = "Phone";
@@ -137,7 +140,7 @@ function establecerIdioma(idioma){
             teaching.textContent = "TEACHING";
             cars.textContent = "CARS";
             download_cv.textContent = "Download resume";
-            skills_title.textContent = "Skills";
+            skills_title.textContent = "SKILLS";
             technical_skills_title.textContent = "Technical Skills";
             networks_skill.textContent = "Networks";
             professional_skills_title.textContent = "Professional Skills";
@@ -146,7 +149,7 @@ function establecerIdioma(idioma){
             creativity.textContent = "Creativity";
             dedication.textContent = "Dedication";
             proyect_management.textContent = "Proyect Management";
-            resume_title.textContent = "Resume";
+            resume_title.textContent = "RESUME";
             formal_education.textContent = "Formal education";
             seg_inf.textContent = "Bachelor's Degree in Computer Security";
             seg_inf_description.textContent = "Design IT security strategies, define requirements for their implementation and develop internal policies to manage complex incidents. Lead risk analysis, assessing assets, threats and vulnerabilities, and establish control systems and continuous improvement. Advise on forensic analysis of devices and coordinate interdisciplinary teams to investigate incidents.";
@@ -159,7 +162,7 @@ function establecerIdioma(idioma){
             eccouncil_description_work.textContent = "Course licensing and collaboration of my training courses on the EC-Council Learning CodeRed platform.";
             udemy_description.textContent = "Professional development as an instructor teaching courses on programming languages such as Perl and Python. Currently I have +8500 students among all my courses.";
             electromechanical_technician.textContent = "Electromechanical Technician - Internship";
-            portfolio_title.textContent = "PORTFOLIO";
+            portfolio_title.textContent = "PROJECTS";
             retrieveinfo_description.textContent = "RetrieveInfo is an automated tool for extracting and collecting key information from Windows systems using native command prompt (CMD) commands.";
             project_view1.textContent = "See project";
             pynumverify_description.textContent = "PyNumVerify is a Python tool that allows users to validate phone numbers using the API Layer service.";
@@ -198,10 +201,10 @@ function establecerIdioma(idioma){
             nav_about.textContent = 'SOBRE MÍ';
             nav_skills.textContent = 'HABILIDADES'
             nav_resume.textContent = 'CURRICULUM';
-            nav_portfolio.textContent = 'PORTAFOLIO';
+            nav_portfolio.textContent = 'PROYECTOS';
             nav_contact.textContent = 'CONTACTO';
-            about_title.textContent = 'Sobre Mí';
-            about_description.textContent = "Hola, soy Tomás Delgado, soy estudiante de la carrera de Licenciatura en Seguridad Informática en la Universidad Siglo 21. Me he desempeñado como instructor en plataformas como Udemy y EC-Council Learning realizando cursos relacionados con la programación y ciberseguridad (personal y corporativa). Mi fuerte en la programación son los lenguajes Python y C. Cuento con las certificaciones Experto Universitario en Ethical Hacking por la Universidad Tecnológica Nacional y Ethical Hacking Essentials (EHE) de EC-Council, entre otras. Además, poseo experiencia de nivel medio/alto en el manejo de sistemas GNU/Linux y Windows.";
+            about_title.textContent = 'SOBRE MÍ';
+            about_description.textContent = "Apasionado por la ciberseguridad y la enseñanza, fusiono mi conocimiento técnico con una sólida experiencia en Python y C. Como instructor en Udemy y EC-Council Learning, he capacitado a otros en seguridad informática y desarrollo. Certificado en Ethical Hacking por la UTN y EC-Council, con habilidades en GNU/Linux, Windows y redes. Busco desafíos que me permitan seguir creciendo y aportar en el mundo de la seguridad y la tecnología 🚀🔐.";
             personal_data_title.textContent = "Datos personales";
             birthday.textContent = "Cumpleaños";
             number_phone.textContent = "Teléfono";
@@ -215,7 +218,7 @@ function establecerIdioma(idioma){
             teaching.textContent = "ENSEÑANZA";
             cars.textContent = "AUTOS";
             download_cv.textContent = "Descarga CV";
-            skills_title.textContent = "Habilidades";
+            skills_title.textContent = "HABILIDADES";
             technical_skills_title.textContent = "Habilidades Técnicas";
             networks_skill.textContent = "Redes";
             professional_skills_title.textContent = "Habilidades profesionales";
@@ -224,7 +227,7 @@ function establecerIdioma(idioma){
             creativity.textContent = "Creatividad";
             dedication.textContent = "Dedicación";
             proyect_management.textContent = "Gestión de proyectos";
-            resume_title.textContent = "Curriculum";
+            resume_title.textContent = "CURRICULUM";
             formal_education.textContent = "Educación formal";
             seg_inf.textContent = "Licenciatura en Seguridad Informática";
             seg_inf_description.textContent = "Diseñar estrategias de seguridad informática, definir requisitos para su implementación y desarrollar políticas internas para gestionar incidentes complejos. Liderar análisis de riesgos, evaluando activos, amenazas y vulnerabilidades, y establecer sistemas de control y mejora continua. Asesorar en análisis forense de dispositivos y coordinar equipos interdisciplinarios para investigar incidentes.";
@@ -237,7 +240,7 @@ function establecerIdioma(idioma){
             eccouncil_description_work.textContent = "Licenciamiento de cursos y colaboración de mis formaciones en la plataforma de EC-Council Learning CodeRed";
             udemy_description.textContent = "Desarrollo profesional como instructor dictando cursos sobre programación en lenguajes como Perl y Python. Actualmente cuento con +8500 estudiantes entre todos mis cursos.";
             electromechanical_technician.textContent = "Tecnico Electromecanico - Practicas";
-            portfolio_title.textContent = "PORTAFOLIO";
+            portfolio_title.textContent = "PROYECTOS";
             retrieveinfo_description.textContent = "RetrieveInfo es una herramienta automatizada para extraer y recopilar información clave de sistemas Windows utilizando comandos nativos del símbolo del sistema (CMD)";
             project_view1.textContent = "Ver proyecto";
             pynumverify_description.textContent = "PyNumVerify es una herramienta de Python que permite a los usuarios validar números de teléfono mediante el servicio API Layer.";
