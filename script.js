@@ -200,7 +200,7 @@ function establecerIdioma(idioma){
             nav_home.textContent = 'INICIO';
             nav_about.textContent = 'SOBRE MÍ';
             nav_skills.textContent = 'HABILIDADES'
-            nav_resume.textContent = 'CURRICULUM';
+            nav_resume.textContent = 'EXPERIENCIA';
             nav_portfolio.textContent = 'PROYECTOS';
             nav_contact.textContent = 'CONTACTO';
             about_title.textContent = 'SOBRE MÍ';
@@ -227,7 +227,7 @@ function establecerIdioma(idioma){
             creativity.textContent = "Creatividad";
             dedication.textContent = "Dedicación";
             proyect_management.textContent = "Gestión de proyectos";
-            resume_title.textContent = "CURRICULUM";
+            resume_title.textContent = "EXPERIENCE";
             formal_education.textContent = "Educación formal";
             seg_inf.textContent = "Licenciatura en Seguridad Informática";
             seg_inf_description.textContent = "Diseñar estrategias de seguridad informática, definir requisitos para su implementación y desarrollar políticas internas para gestionar incidentes complejos. Liderar análisis de riesgos, evaluando activos, amenazas y vulnerabilidades, y establecer sistemas de control y mejora continua. Asesorar en análisis forense de dispositivos y coordinar equipos interdisciplinarios para investigar incidentes.";
