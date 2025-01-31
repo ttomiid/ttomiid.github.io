@@ -119,7 +119,7 @@ function establecerIdioma(idioma){
             nav_home.textContent = 'HOME';
             nav_about.textContent = 'ABOUT';
             nav_skills.textContent = 'SKILLS'
-            nav_resume.textContent = 'RESUME';
+            nav_resume.textContent = 'EXPERIENCE';
             nav_portfolio.textContent = 'PROJECTS';
             nav_contact.textContent = 'CONTACT';
             about_title.textContent = 'ABOUT';
@@ -149,7 +149,7 @@ function establecerIdioma(idioma){
             creativity.textContent = "Creativity";
             dedication.textContent = "Dedication";
             proyect_management.textContent = "Proyect Management";
-            resume_title.textContent = "RESUME";
+            resume_title.textContent = "EXPERIENCE";
             formal_education.textContent = "Formal education";
             seg_inf.textContent = "Bachelor's Degree in Computer Security";
             seg_inf_description.textContent = "Design IT security strategies, define requirements for their implementation and develop internal policies to manage complex incidents. Lead risk analysis, assessing assets, threats and vulnerabilities, and establish control systems and continuous improvement. Advise on forensic analysis of devices and coordinate interdisciplinary teams to investigate incidents.";
@@ -227,7 +227,7 @@ function establecerIdioma(idioma){
             creativity.textContent = "Creatividad";
             dedication.textContent = "Dedicación";
             proyect_management.textContent = "Gestión de proyectos";
-            resume_title.textContent = "EXPERIENCE";
+            resume_title.textContent = "EXPERIENCIA";
             formal_education.textContent = "Educación formal";
             seg_inf.textContent = "Licenciatura en Seguridad Informática";
             seg_inf_description.textContent = "Diseñar estrategias de seguridad informática, definir requisitos para su implementación y desarrollar políticas internas para gestionar incidentes complejos. Liderar análisis de riesgos, evaluando activos, amenazas y vulnerabilidades, y establecer sistemas de control y mejora continua. Asesorar en análisis forense de dispositivos y coordinar equipos interdisciplinarios para investigar incidentes.";
