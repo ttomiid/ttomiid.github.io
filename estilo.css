@@ -270,9 +270,9 @@ html{
     margin-top: 40px;
     border: 10px solid #1CB698;
     display: block;
-    width: 60%;
+    width: 90%;
     margin: auto;
-    border-radius: 90px;
+    border-radius: 50%;
     transition: 0.5s ease-in-out; /* Agregamos la transición en el estado base */
 }
 
