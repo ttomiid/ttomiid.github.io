@@ -511,5 +511,5 @@ window.addEventListener("load", () => {
     const loader = document.getElementById("loader");
     setTimeout(() => {
         loader.style.display = "none"; // Oculta el loader después de 2 segundos
-    }, 4000); // Ajusta el tiempo para que se oculte tras completar la animación
+    }, 3000); // Ajusta el tiempo para que se oculte tras completar la animación
 });
