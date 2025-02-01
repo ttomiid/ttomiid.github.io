@@ -251,7 +251,7 @@ html{
     align-items: center;
 }
 
-
+/* Contenedor principal */
 .inicio .contenido-banner{
     padding: 20px;
     background-color: #1e2326;
@@ -260,37 +260,94 @@ html{
     text-align: center;
     border-radius: 40px;
     transition: 1s;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 350px; /* Ajustado a un tamaño más adecuado */
+    height: 420px;
 }
 
 .inicio .contenido-banner:hover{
     box-shadow: 0 0 20px 15px rgba(28, 182, 152, 0.5); /* Luz más suave y difusa */
 }
 
+/* Imagen de perfil */
 .inicio .contenido-banner img {
-    margin-top: 40px;
-    border: 10px solid #1CB698;
+    margin-top: 20px;
+    border: 5px solid #15856e; /* Verde terminal */
     display: block;
-    width: 90%;
-    margin: auto;
+    width: 220px; /* Ajustamos el tamaño para la imagen */
+    height: 220px;
     border-radius: 50%;
-    transition: 0.5s ease-in-out; /* Agregamos la transición en el estado base */
+    transition: opacity 0.3s ease-in-out, filter 0.3s ease-in-out;
 }
 
-.inicio .contenido-banner img:hover {
-    border-radius: 200px; /* Cambia el radio al pasar el cursor */
-    border: 10px solid #15856e; /* Cambia el color del borde */
-    box-shadow: 0px 0px 10px 10px rgba(28, 182, 152, 0.7); /* Efecto de luz */
+/* Efecto de opacidad para la imagen */
+.login-effect {
+    opacity: 0.5;
+    filter: brightness(80%);
 }
 
+/* Estilo del login */
+.terminal-text {
+    font-family: "Courier New", monospace;
+    font-size: 14px;
+    color: #1CB698;
+    background: #252A2E;
+    padding: 5px 10px;
+    margin-top: -5px;
+    border-radius: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Mostrar login */
+.terminal-active {
+    opacity: 1;
+}
+
+/* Estilo del candado abierto */
+#candado-icono {
+    font-size: 50px;
+    color: #00ff00;
+    position: absolute;
+    top: -60px; /* Coloca el candado por encima de la imagen */
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+/* Hacer visible el candado */
+.candado-visible {
+    opacity: 1;
+}
+
+/* Título y texto */
 .inicio .contenido-banner h1{
     margin-top: 40px;
     font-size: 42px;
     font-family: 'Righteous';
 }
+
 .inicio .contenido-banner h2{
     font-size: 22px;
     /*font-weight: normal;*/
 }
+
+/* Animación de los botones de redes */
+@keyframes aparecerRedes {
+    from {
+        transform: translateY(-50px); /* Comienza arriba */
+        opacity: 0; /* Comienza invisible */
+    }
+    to {
+        transform: translateY(0); /* Se mueve a su posición original */
+        opacity: 1; /* Se vuelve completamente visible */
+    }
+}
+
+/* Estilo para los botones de redes */
 .inicio .contenido-banner .redes a{
     color: #fff;
     display: inline-block;
@@ -303,7 +360,28 @@ html{
     margin: 40px 5px;
     font-size: 20px;
     transition: .3s;
+    animation: aparecerRedes 1s ease-out forwards; /* Aparecer con animación */
+    opacity: 0; /* Inicia invisible */
 }
+
+/* Asegura que la animación se ejecute al cargar la página */
+.inicio .contenido-banner .redes a:nth-child(1) {
+    animation-delay: 0.5s; /* El primer botón se anima después de 0.5s */
+}
+
+.inicio .contenido-banner .redes a:nth-child(2) {
+    animation-delay: 1s; /* El segundo botón se anima después de 1s */
+}
+
+.inicio .contenido-banner .redes a:nth-child(3) {
+    animation-delay: 1.5s; /* El tercer botón se anima después de 1.5s */
+}
+
+.inicio .contenido-banner .redes a:hover{
+    box-shadow: 0 0 20px 10px rgba(28, 182, 152, 0.5); /* Luz más suave y difusa */
+    background-color: #1CB698;
+}
+
 .inicio .contenido-banner .redes a:hover{
     box-shadow: 0 0 20px 10px rgba(28, 182, 152, 0.5); /* Luz más suave y difusa */
     background-color: #1CB698;

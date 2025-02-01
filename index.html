@@ -19,6 +19,7 @@
     <meta property="og:type" content="website">
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <title id="web_title">Tomás Delgado | Cybersecurity Specialist</title>
     <link rel="stylesheet" href="estilo.css">
     <link rel="icon" type="image/png" href="img/favicon.png">
@@ -30,7 +31,6 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-J6P0N40Z60');
 </script>
 
@@ -92,7 +92,10 @@
     <section id="inicio" class="inicio">
         <div class="contenido-banner">
             <div class="contenedor-img">
-                <img src="img/foto_perfil2.png" alt="">
+                <!-- Candado abierto arriba de la imagen -->
+                <i class="fas fa-lock-open" id="candado-icono"></i> <!-- Candado abierto -->
+                <p class="terminal-text" id="terminal-text"></p> <!-- Mensaje de login -->
+                <img id="imagen-banner" src="img/Portafolio.jpg" alt="Foto de Perfil"> <!-- Imagen -->
             </div>
             <h1 id="name_title">TOMÁS DELGADO</h1>
             

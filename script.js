@@ -472,4 +472,44 @@ window.onscroll = function(){
     efectoHabilidades();
 }
 
+const imagenes = [
+    "img/Portafolio.jpg",
+    "img/Portafolio2.jpg",
+    "img/Portafolio3.jpg",
+    "img/Portafolio4.jpg"
+];
 
+let indice = 0;
+const imagenBanner = document.getElementById("imagen-banner");
+const terminalText = document.getElementById("terminal-text");
+const candadoIcono = document.getElementById("candado-icono");
+
+function cambiarImagen() {
+    // Muestra el candado y el login
+    candadoIcono.classList.add("candado-visible");
+    terminalText.classList.add("terminal-active");
+    terminalText.innerText = "login: root\nPassword: ********\nAutenticando...\nAcceso concedido.";
+
+    // Aplica el efecto de opacidad a la imagen
+    imagenBanner.classList.add("login-effect");
+
+    setTimeout(() => {
+        // Desvanece el candado y el login después de 2 segundos
+        candadoIcono.classList.remove("candado-visible");
+        terminalText.classList.remove("terminal-active");
+
+        setTimeout(() => {
+            // Cambia la imagen después del desvanecimiento
+            indice = (indice + 1) % imagenes.length;
+            imagenBanner.src = imagenes[indice];
+
+            // Remueve el efecto de oscurecimiento de la imagen
+            setTimeout(() => {
+                imagenBanner.classList.remove("login-effect");
+            }, 300);
+        }, 500); // Tiempo para que el mensaje se desvanezca
+    }, 2000); // El candado y el mensaje permanecen por 2 segundos
+}
+
+// Cambia la imagen cada 4 segundos
+setInterval(cambiarImagen, 4000);
