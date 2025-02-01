@@ -23,7 +23,7 @@ html{
     align-items: center;
     z-index: 9999;
     opacity: 1;
-    animation: fadeOut 3s ease-out forwards;
+    animation: fadeOut 2s ease-out forwards;
 }
 
 /* Círculo de carga */
@@ -33,7 +33,7 @@ html{
     border-radius: 50%;
     width: 50px;
     height: 50px;
-    animation: spin 3s linear infinite, expand 3s ease-in-out forwards;
+    animation: spin 2s linear infinite, expand 2s ease-in-out forwards;
 }
 
 /* Animación de giro */
