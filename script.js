@@ -472,3 +472,44 @@ window.onscroll = function(){
     efectoHabilidades();
 }
 
+
+// Lista de las URLs de las 4 imágenes
+const imagenes = [
+    "img/Portafolio2.jpg",           // Imagen 2
+    "img/Portafolio3.jpg",           // Imagen 3
+    "img/Portafolio4.jpg"            // Imagen 4
+];
+
+// Índice para controlar la imagen actual
+let indiceImagen = 0;
+
+function cambiarImagen() {
+    // Obtener la imagen
+    const imagen = document.querySelector('.inicio .contenido-banner img');
+
+    // Aplicar la clase fade-out para iniciar el desvanecimiento
+    imagen.classList.add('fade-out');
+
+    // Esperar el tiempo de la transición (1 segundo) antes de cambiar la imagen
+    setTimeout(() => {
+        // Cambiar la imagen al siguiente índice en la lista
+        imagen.src = imagenes[indiceImagen];
+
+        // Actualizar el índice para la siguiente imagen (circular)
+        indiceImagen = (indiceImagen + 1) % imagenes.length;
+
+        // Eliminar la clase fade-out para que la nueva imagen se desvanezca
+        imagen.classList.remove('fade-out');
+    }, 1000);  // 1000 ms es el tiempo de la transición
+}
+
+// Llamar a la función de cambio de imagen cada 4 segundos
+setInterval(cambiarImagen, 4000); // Cambiar la imagen cada 3 segundos
+
+
+window.addEventListener("load", () => {
+    const loader = document.getElementById("loader");
+    setTimeout(() => {
+        loader.style.display = "none"; // Oculta el loader después de 2 segundos
+    }, 4000); // Ajusta el tiempo para que se oculte tras completar la animación
+});
