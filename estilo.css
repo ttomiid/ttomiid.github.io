@@ -9,6 +9,70 @@ html{
     /* me permite deslizar cuando hago clic en los links del menu */
     scroll-behavior: smooth;
 }
+
+/* Contenedor de la animación de deslizamiento */
+#sliding-animation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #1CB698; /* Color de fondo verde */
+    z-index: 9999;
+    animation: slideOut 1s ease-in-out forwards;
+}
+
+/* Animación de deslizamiento hacia fuera */
+@keyframes slideOut {
+    0% {
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    50% {
+        left: 100%;
+        width: 0;
+        height: 100%;
+    }
+    100% {
+        left: -100%;
+        width: 0;
+        height: 100%;
+        opacity: 0;
+    }
+}
+
+/* Efecto de entrada del contenido */
+#sliding-animation:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: #1e2326; /* Color verde de la animación */
+    animation: slideIn 2s ease-in-out forwards;
+}
+
+/* Animación para la entrada desde el lado */
+@keyframes slideIn {
+    0% {
+        left: -100%;
+        width: 100%;
+        height: 100%;
+    }
+    50% {
+        left: 50%;
+        width: 50%;
+        height: 100%;
+    }
+    100% {
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+
 /* MENU */
 .contenedor-header{
     background: #1e2326;
@@ -265,8 +329,9 @@ html{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 350px; /* Ajustado a un tamaño más adecuado */
-    height: 420px;
+    width: 360px; /* Ajustado a un tamaño más adecuado */
+    height: 600px;
+    padding-bottom: 50px;
 }
 
 .inicio .contenido-banner:hover{
@@ -276,51 +341,13 @@ html{
 /* Imagen de perfil */
 .inicio .contenido-banner img {
     margin-top: 20px;
+    margin-left: 10px;
     border: 5px solid #15856e; /* Verde terminal */
     display: block;
     width: 220px; /* Ajustamos el tamaño para la imagen */
     height: 220px;
     border-radius: 50%;
     transition: opacity 0.3s ease-in-out, filter 0.3s ease-in-out;
-}
-
-/* Efecto de opacidad para la imagen */
-.login-effect {
-    opacity: 0.5;
-    filter: brightness(80%);
-}
-
-/* Estilo del login */
-.terminal-text {
-    font-family: "Courier New", monospace;
-    font-size: 14px;
-    color: #1CB698;
-    background: #252A2E;
-    padding: 5px 10px;
-    margin-top: -5px;
-    border-radius: 10px;
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out;
-}
-
-/* Mostrar login */
-.terminal-active {
-    opacity: 1;
-}
-
-/* Estilo del candado abierto */
-#candado-icono {
-    font-size: 50px;
-    color: #00ff00;
-    position: absolute;
-    top: -60px; /* Coloca el candado por encima de la imagen */
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
-}
-
-/* Hacer visible el candado */
-.candado-visible {
-    opacity: 1;
 }
 
 /* Título y texto */
@@ -1077,6 +1104,15 @@ footer .arriba:hover{
     box-shadow: 0 0 20px 15px rgba(28, 182, 152, 0.5); /* Luz más suave y difusa */
 }
 
+#particles-js {
+    position:relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Asegura que las partículas queden detrás del contenido */
+}
+
 
 /* SECCION RESPONSIVE */
 @media screen and (max-width:1720px){
@@ -1143,6 +1179,7 @@ footer .arriba:hover{
     #separator{
         display: none;
     }
+
 
 
 }
