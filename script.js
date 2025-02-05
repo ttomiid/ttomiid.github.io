@@ -114,8 +114,8 @@ function establecerIdioma(idioma){
     
     switch(idioma){
         case 'USA':
-            overview_title_web.textContent = "Tomás Delgado | Cybersecurity Specialist";
-            web_title.textContent = "Tomás Delgado | Cybersecurity Specialist";
+            overview_title_web.textContent = "Tomás Delgado | Portfolio";
+            web_title.textContent = "Tomás Delgado | Portfolio";
             nav_home.textContent = 'HOME';
             nav_about.textContent = 'ABOUT';
             nav_skills.textContent = 'SKILLS'
@@ -123,7 +123,7 @@ function establecerIdioma(idioma){
             nav_portfolio.textContent = 'PROJECTS';
             nav_contact.textContent = 'CONTACT';
             about_title.textContent = 'ABOUT';
-            about_description.textContent = "Passionate about cybersecurity and teaching, I merge my technical knowledge with solid Python and C expertise. As an instructor at Udemy and EC-Council Learning, I have trained others in computer security and development. Certified in Ethical Hacking by UTN and EC-Council, with skills in GNU/Linux, Windows and networking. I am looking for challenges that allow me to continue growing and contributing to the world of security and technology 🚀🔐.";
+            about_description.textContent = "🔍Offensive Cybersecurity Analyst and Python developer with experience developing projects for more than 1 year and in constant training, I am currently an instructor on platforms such as EC-Council and Udemy, teaching courses on cybersecurity and programming, I have experience in GNU / Linux and Windows systems, use of offensive hacking tools such as Nmap, BurpSuite, Nikto, recon-ng, Metasploit Framework, among many others that I have used during my training and CTF, I also have experience in programming languages such as Python, SQL, C, HTML5, CSS3. \n\n Always ready for new challenges in the IT security world, the passion to keep growing and learning is something that defines me on a daily basis. 🚀🔐";
             /*
             Hola, soy Tomás Delgado, soy estudiante de la carrera de Licenciatura en Seguridad Informática en la Universidad Siglo 21. Me he desempeñado como instructor en plataformas como Udemy y EC-Council Learning realizando cursos relacionados con la programación y ciberseguridad (personal y corporativa). Mi fuerte en la programación son los lenguajes Python y C. Cuento con las certificaciones Experto Universitario en Ethical Hacking por la Universidad Tecnológica Nacional y Ethical Hacking Essentials (EHE) de EC-Council, entre otras. Además, poseo experiencia de nivel medio/alto en el manejo de sistemas GNU/Linux y Windows.
             */ 
@@ -195,8 +195,8 @@ function establecerIdioma(idioma){
             break;
         
         case 'ESP':
-            overview_title_web.textContent = "Tomás Delgado | Cybersecurity Specialist";
-            web_title.textContent = "Tomás Delgado | Cybersecurity Specialist";
+            overview_title_web.textContent = "Tomás Delgado | Portafolio";
+            web_title.textContent = "Tomás Delgado | Portafolio";
             nav_home.textContent = 'INICIO';
             nav_about.textContent = 'SOBRE MÍ';
             nav_skills.textContent = 'HABILIDADES'
@@ -204,7 +204,7 @@ function establecerIdioma(idioma){
             nav_portfolio.textContent = 'PROYECTOS';
             nav_contact.textContent = 'CONTACTO';
             about_title.textContent = 'SOBRE MÍ';
-            about_description.textContent = "Apasionado por la ciberseguridad y la enseñanza, fusiono mi conocimiento técnico con una sólida experiencia en Python y C. Como instructor en Udemy y EC-Council Learning, he capacitado a otros en seguridad informática y desarrollo. Certificado en Ethical Hacking por la UTN y EC-Council, con habilidades en GNU/Linux, Windows y redes. Busco desafíos que me permitan seguir creciendo y aportar en el mundo de la seguridad y la tecnología 🚀🔐.";
+            about_description.textContent = "🔍 Analista en Ciberseguridad Ofensiva y desarrollador en Python con experiencia desarrollando proyectos de más de 1 año y en constante formación, actualmente soy instructor en plataformas como EC-Council y Udemy, dictando cursos sobre ciberseguridad y programación, cuento con experiencia en sistemas GNU/Linux y Windows, utilización de herramientas de Hacking ofensivo como Nmap, BurpSuite, Nikto, recon-ng, Metasploit Framework, entre otras muchas que he utilizado durante mi formación y realización de CTF, además cuento con experiencia en lenguajes de programación como Python, SQL, C, HTML5, CSS3. \n\n Siempre listo para nuevos retos en el mundo de la seguridad informática, la pasión por seguir creciendo y aprendiendo es algo que me define en el día a día. 🚀🔐";
             personal_data_title.textContent = "Datos personales";
             birthday.textContent = "Cumpleaños";
             number_phone.textContent = "Teléfono";
